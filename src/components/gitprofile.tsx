@@ -41,7 +41,7 @@ const GitProfile = ({ config }: { config: Config }) => {
   const [sanitizedConfig] = useState<SanitizedConfig | Record<string, never>>(
     getSanitizedConfig(config),
   );
-  const [theme, setTheme] = useState<string>(DEFAULT_THEMES[0]);
+  const [theme, setTheme] = useState<string>(DEFAULT_THEMES[2]);
   const [error, setError] = useState<CustomError | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [profile, setProfile] = useState<Profile | null>(null);
@@ -108,7 +108,7 @@ const GitProfile = ({ config }: { config: Config }) => {
 
       setProfile({
         avatar: data.avatar_url,
-        name: data.name || ' ',
+        name: data.name || 'mukul785',
         bio: data.bio || '',
         location: data.location || '',
         company: data.company || '',
@@ -284,7 +284,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                 </div>
               </div>
             </div>
-            {sanitizedConfig.footer && (
+{/*             {sanitizedConfig.footer && (
               <footer
                 className={`p-4 footer ${BG_COLOR} text-base-content footer-center`}
               >
@@ -292,7 +292,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                   <Footer content={sanitizedConfig.footer} loading={loading} />
                 </div>
               </footer>
-            )}
+            )} */}
           </>
         )}
       </div>
