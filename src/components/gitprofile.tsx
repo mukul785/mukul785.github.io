@@ -28,7 +28,6 @@ import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
 import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
-import Footer from './footer';
 import PublicationCard from './publication-card';
 
 /**
@@ -289,7 +288,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                 className={`p-4 footer ${BG_COLOR} text-base-content footer-center`}
               >
                 <div className="card compact bg-base-100 shadow">
-                  <Footer content={sanitizedConfig.footer} loading={loading} />
+                  < content={sanitizedConfig.} loading={loading} />
                 </div>
               </footer>
             )} */}
