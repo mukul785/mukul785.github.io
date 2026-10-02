@@ -107,10 +107,12 @@ const GitProfile = ({ config }: { config: Config }) => {
 
       setProfile({
         avatar: data.avatar_url,
-        name: data.name || 'mukul785',
-        bio: data.bio || '',
+        name: data.name || 'Mukul Dagar',
+        bio:
+          data.bio ||
+          'Associate Software Development Engineer at PRISM. I build across native Android, React Native, web and backend, with side projects in blockchain and AI tooling.',
         location: data.location || '',
-        company: data.company || '',
+        company: data.company || 'PRISM',
       });
 
       if (!sanitizedConfig.projects.github.display) {
@@ -283,15 +285,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                 </div>
               </div>
             </div>
-{/*             {sanitizedConfig.footer && (
-              <footer
-                className={`p-4 footer ${BG_COLOR} text-base-content footer-center`}
-              >
-                <div className="card compact bg-base-100 shadow">
-                  < content={sanitizedConfig.} loading={loading} />
-                </div>
-              </footer>
-            )} */}
           </>
         )}
       </div>

@@ -1,16 +1,16 @@
 {
-  "name": "@arifszn/gitprofile",
+  "name": "mukul785.github.io",
   "description": "Create an automatic portfolio based on GitHub profile",
   "version": "3.1.0",
   "type": "module",
   "license": "MIT",
-  "author": "arifszn",
+  "author": "mukul785",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arifszn/gitprofile.git"
+    "url": "https://github.com/mukul785/mukul785.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/arifszn/gitprofile/issues"
+    "url": "https://github.com/mukul785/mukul785.github.io/issues"
   },
   "scripts": {
     "dev": "vite",

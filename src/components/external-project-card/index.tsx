@@ -69,11 +69,12 @@ const ExternalProjectCard = ({
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className={`card shadow-lg compact bg-base-100 ${item.link ? 'cursor-pointer' : 'cursor-default'}`}
         key={index}
         href={item.link}
         onClick={(e) => {
           e.preventDefault();
+          if (!item.link) return;
 
           try {
             if (googleAnalyticId) {
