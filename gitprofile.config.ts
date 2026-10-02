@@ -94,7 +94,7 @@ const CONFIG = {
     email: 'dagarm785@gmail.com',
   },
   resume: {
-    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '/Resume_MukulDagar.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'C++',
@@ -120,9 +120,29 @@ const CONFIG = {
       from: 'August 2026',
       to: 'Present',
     },
+    {
+      company: 'PRISM',
+      position: 'Intern',
+      from: 'August 2025',
+      to: 'August 2026',
+    },
+    {
+      company: 'Metacrafters',
+      position: 'Blockchain Development Apprentice',
+      from: 'June 2024',
+      to: 'September 2024',
+      companyLink: 'https://metacrafters.io',
+    },
   ],
   certifications: [],
-  educations: [],
+  educations: [
+    {
+      institution: 'Chandigarh University',
+      degree: 'B.E. Computer Science and Engineering',
+      from: '2022',
+      to: '2026',
+    },
+  ],
   publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {
